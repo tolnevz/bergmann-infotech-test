@@ -1,0 +1,18 @@
+<div class="container">
+  <button
+    mat-stroked-button
+    style="margin-bottom: 50px"
+    (click)="isDisabled = !isDisabled"
+  >
+    Switch the availability of button below
+  </button>
+  <button
+    [isViewerDisabled]="isDisabled"
+    mat-raised-button
+    appAdditionalDisable
+    viewerTooltip="This button is disabled"
+    color="primary"
+  >
+    I'm a button!
+  </button>
+</div>
